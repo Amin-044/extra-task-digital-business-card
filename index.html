@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amin Khatri - Digital Business Card</title>
+  <meta name="description" content="Digital business card of Amin Khatri, Web Developer at Exotic Infotech, Bharuch. Save the contact or scan the QR code.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Link preview. After uploading, change og:image to the full address,
+       for example https://your-name.github.io/extra-task-digital-business-card/assets/og-cover.png -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Amin Khatri - Digital Business Card">
+  <meta property="og:description" content="Web Developer at Exotic Infotech. Save my contact or scan the QR code.">
+  <meta property="og:image" content="assets/og-cover.png">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card">
+
+    <!-- Header -->
+    <div class="header">
+      <span class="brand">AK</span>
+      <span class="tag">Digital Business Card</span>
+    </div>
+
+    <!-- Profile -->
+    <img src="assets/avatar.svg" alt="Amin Khatri" class="photo">
+    <h1>Amin Khatri</h1>
+    <p class="job">Web Developer at Exotic Infotech</p>
+    <p class="place">📍 Bharuch, Gujarat, India</p>
+    <p class="bio">
+      I build fast, accessible web products end to end. Currently finishing my Bachelor of Computer Applications
+       degree and open to freelance work.
+    </p>
+
+    <!-- Main buttons -->
+    <div class="buttons">
+      <button class="btn dark" onclick="saveContact()">💾 Save Contact</button>
+      <button class="btn light" onclick="shareCard()">🔗 Share</button>
+      <button class="btn light icon-btn" onclick="copyLink()" title="Copy link" aria-label="Copy profile link">⧉</button>
+    </div>
+
+    <!-- Contact -->
+    <h2>Contact</h2>
+
+    <div class="item">
+      <a href="tel:+917016890015">
+        <span class="label">📞 Phone</span>
+        <span class="value">+91 70168 90015</span>
+      </a>
+      <button class="copy" onclick="copyPhone()">Copy</button>
+    </div>
+
+    <div class="item">
+      <a href="mailto:aminkhatri468@gmail.com">
+        <span class="label">✉️ Email</span>
+        <span class="value">aminkhatri468@gmail.com</span>
+      </a>
+      <button class="copy" onclick="copyEmail()">Copy</button>
+    </div>
+
+    <div class="item">
+      <a href="https://wa.me/917016890015" target="_blank" rel="noopener">
+        <span class="label">💬 WhatsApp</span>
+        <span class="value">Start a chat</span>
+      </a>
+    </div>
+
+    <div class="item">
+      <a href="https://exoticinfotech.com/" target="_blank" rel="noopener">
+        <span class="label">🌐 Website</span>
+        <span class="value">Exotic Infotech</span>
+      </a>
+      <span class="arrow">↗</span>
+    </div>
+
+    <!-- Social links -->
+    <h2>Social Links</h2>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/amin-khatri-92340a30a/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Amin-044" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/amin_khatri33" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/amin.khatri.1042" target="_blank" rel="noopener">Facebook</a>
+    </div>
+
+    <!-- QR code -->
+    <h2>Scan to Open</h2>
+
+    <div class="qr-box">
+      <div id="qrcode"></div>
+    </div>
+    <p class="qr-url" id="qr-url"></p>
+
+    <p class="footer">© <span id="year">2026</span> Amin Khatri</p>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="vendor/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

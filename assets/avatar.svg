@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Monogram of Amin Khatri">
+  <rect width="512" height="512" fill="#f1efeb"/>
+  <circle cx="256" cy="256" r="244" fill="none" stroke="#e2ded7" stroke-width="2"/>
+  <text x="256" y="300" text-anchor="middle" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="158" letter-spacing="-4" fill="#17171a">AK</text>
+</svg>
